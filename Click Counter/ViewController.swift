@@ -13,13 +13,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //label
+        let labelWithNumber = UILabel()
+        labelWithNumber.frame = CGRect(x: 150, y: 150, width: 60, height: 60)
+        labelWithNumber.text = "0"
+        view.addSubview(labelWithNumber)
+        
+        //button
+        let buttonForIncrement = UIButton()
+        buttonForIncrement.frame = CGRect(x: 150, y: 250, width: 60, height: 60)
+        buttonForIncrement.setTitle("Click", for: .normal)
+        buttonForIncrement.setTitleColor(UIColor.blue, for: .normal)
+        view.addSubview(buttonForIncrement)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
