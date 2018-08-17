@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     //TODO create 2 params
-    var label: UILabel!
+    @IBOutlet var myLabel: UILabel!
     var count = 0
     
     override func viewDidLoad() {
