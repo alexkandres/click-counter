@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     }
     
     //TODO create method that increments and sets new text
-    @objc func incrementCount() {
+    @IBAction func incrementCount() {
         count += 1
-        label.text = "\(count)"
+        myLabel.text = "\(count)"
     }
 
 }
